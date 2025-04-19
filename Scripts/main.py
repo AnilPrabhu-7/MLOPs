@@ -5,8 +5,8 @@ from ml_functions import training_pipeline, prediction_pipeline, evaluation_matr
 from helper_functions import log_info, log_error
 
 # Define paths
-DATA_PATH = "D:/MLOPS-2025-DSC/mlops2025-DSC/Data/raw/loan_risk_data.csv"
-ARTIFACTS_PATH = "D:/MLOPS-2025-DSC/mlops2025-DSC/Artifacts"
+DATA_PATH = "C:/Users/Admin/Documents/MLOPS-2025/Practical/user"
+ARTIFACTS_PATH = "C:/Users/Admin/Documents/MLOPS-2025/Practical/MLOPs/Artifacts"
 os.makedirs(ARTIFACTS_PATH, exist_ok=True)
 PIPELINE_PATH = os.path.join(ARTIFACTS_PATH, "data_processing_pipeline.pkl")
 LABEL_ENCODER_PATH = os.path.join(ARTIFACTS_PATH, "label_encoder.pkl")
@@ -16,7 +16,7 @@ def main():
     log_info("🚀 Starting Data Processing Step")
     
     # Load dataset
-    df = pd.read_csv(DATA_PATH)
+    df = pd.read_csv("C:/Users/Admin/Documents/MLOPS-2025/Practical/user/loan_risk_data.csv")
     log_info(f"✅ Loaded dataset: {df.shape[0]} rows, {df.shape[1]} columns")
 
     # Separate features and target variable

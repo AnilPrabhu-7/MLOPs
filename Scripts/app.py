@@ -1,12 +1,12 @@
 import streamlit as st
-import pandas as pd
+import pandas as pd 
 import pickle
 import os
 from helper_functions import log_info, log_error
 
 # Define paths
-ARTIFACTS_PATH = "D:/MLOPS-2025-DSC/mlops2025-DSC/Artifacts"
-DATA_OUTPUT_PATH = "D:/MLOPS-2025-DSC/mlops2025-DSC/Data/output"
+ARTIFACTS_PATH = "C:/Users/Admin/Documents/MLOPS-2025/Practical/MLOPs/Artifacts"
+DATA_OUTPUT_PATH = "C:/Users/Admin/Documents/MLOPS-2025/Practical/MLOPs/Data/output"
 os.makedirs(DATA_OUTPUT_PATH, exist_ok=True)
 MODEL_PATH = os.path.join(ARTIFACTS_PATH, "best_classifier.pkl")
 PIPELINE_PATH = os.path.join(ARTIFACTS_PATH, "data_processing_pipeline.pkl")
